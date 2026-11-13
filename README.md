@@ -1,29 +1,10 @@
-# Descrición
+# IA Básica Grafos - Manuel Dono Araújo
 
-Emprega este arquivo para describir os cambios do teu proxecto.
+Este documento describe os cambios realizados ao proxecto.
 
-Utiliza o formato en markdown coas marcas básicas que aparcen no seguinte exemplo:
+A partir da escea de TankWaypoints: 
 
-# Título principal
-## Subtítulo
-
-Texto normal con **negriña** e *cursiva*.
-
-- Lista 1
-- Lista 2
-
-[Ligazón](https://exemplo.com)
-
-
-```csharp
-using UnityEngine;
-
-public class OlaMundo : MonoBehaviour
-{
-    void Start()
-    {
-        Debug.Log("Ola, mundo desde C#!");
-    }
-}
-
-```
+- Fixen un novo nodo detrás das rocas, na parte superior do mapa.
+- Para isto, engadin un novo nodo no array de Waypoints, modifiquei o WPManager para engadir novos enlaces bidireccionais cos puntos 04, 07 e 03.
+- Logo, modifiquei o script de TanksWaypointsFollow para unha nova función chamada "GoToBack", cambiando o id do waypoint a 8.
+- Finalmente, engadin un novo botón chamado Go To Back, que chama ao metodo anteriormente mencionado.

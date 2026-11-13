@@ -90,6 +90,12 @@ public class TanksWaypointsFollow : MonoBehaviour {
         currentWP = 0;
     }
 
+    // Ir á parte de atras (waypoint 8)
+    public void GotoBack() {
+        graph.AStar(currentNode, waypoints[8]);
+        currentWP = 0;
+    }
+
     // =============================================================================
     // BUCLE DE MOVEMENTO (LateUpdate)
     // =============================================================================
